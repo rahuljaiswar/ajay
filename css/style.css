@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Rubik:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background: #fff;
+    min-height: 100vh;
+
+}
+.bgcolor{
+    background-color: white;
+    color: black;
+    border-bottom: 1px solid lightgray;
+}
+.header_wrapper{
+    background-image: url(../images/wallpaint.webp);
+    min-height: 650px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.info{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span{
+    font-size: 0.5em;
+    letter-spacing: 2px;
+    font-weight: 700;  
+    font-family: "Trirong", sans-serif;  
+}
+.logo{
+    font-family: "Sofia", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+#text{
+    position: absolute;
+    color: black;
+    font-size: 8vh;
+    text-align: center;
+    line-height: 0.8em;
+    font-family: "Sofia", sans-serif;
+}
+#btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    /* background: var(--crimson); */
+    color:white;
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    transform: translateY(100px);
+    
+}
+.header_wrapper .navbar-toggler:focus{
+    box-shadow: none;
+}
+.header_wrapper .nav-item{
+    margin: 0 0.625rem;
+}
+.header_wrapper .nav-item .nav-link{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: black;
+    display: inline-block;
+}
+.header_wrapper .nav-item .nav-link.active,
+.header_wrapper .nav-item .nav-link:hover{
+    color: crimson;
+}
+.section{
+    width: 100%;
+}
+.section .contain1{
+    width: 80%;
+    display: block;
+    margin: 0px auto;
+    padding: 50px 0px;
+}
+.content{
+    float: left;
+    width: 55%;
+}
+.image-section{
+    float: right;
+    width: 40%;
+}
+.image-section img{
+    width: 100%;
+    height: auto;
+
+} 
+.content .article p{
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Rubik', sans-serif;
+}
+.content .article .button a{
+    text-decoration: none;
+    padding: 8px 25px;
+    background-color: crimson;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+
+}
+.content .article .button a:hover{
+    color: crimson;
+    background-color: #fff;
+    transition: 1s ease;
+}
+.content .article h3{
+    color: #111;
+    font-size: 17px;
+    line-height: 1.5;
+}
+.content .article h3 a{
+    text-decoration: none;
+}
+.content .article p{
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 1.5;
+    color: #333;
+}
+.whatsapp_float{
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+}
+.serv{
+    margin-top: 25rem !important;
+}
+.card{
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+    font-family: 'PT Serif', serif;
+}
+.card:hover{
+    color: #fff;
+    cursor: pointer;
+}
+.card-img-top{
+    height: 200px;
+    width: 100%;
+}
+.card::before{
+    content: "";
+    position: absolute;
+    left: -100%;
+    top: 0%;
+    background: crimson;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    z-index: -1;
+}
+.card:hover::before{
+    left: 0%;
+}
+.whatsapp a {
+    list-style: none;
+}
+footer{
+    margin-top: 58vh;
+}
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+    .header_wrapper{
+        width: 100%;
+        height: 5rem !important;
+        margin: auto;
+    }
+    .section .container{
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+    .content{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .image-section{
+        float: none;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .image-section img{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    .container .title h1{
+        text-align: center;
+        font-size: 30px;
+    }
+    .container .article .button{
+        text-align: center;
+    }
+    .container .article .button a{
+        padding: 6px 15px;
+        font-size: 16px;
+    }
+    .serv{
+        margin-top: 3rem !important;
+    }
+    .card{
+        margin-bottom: 2.5rem;
+    }
+    footer{
+        margin-top: 3vh;
+    }
+    
+}
